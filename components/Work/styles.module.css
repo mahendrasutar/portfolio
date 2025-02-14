@@ -1,0 +1,15 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    margin-top: 1.5vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+.projects_single {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1.5vw;
+}

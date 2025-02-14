@@ -1,0 +1,129 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+    overflow: hidden;
+}
+
+.header_container {
+    display: flex;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    flex: 1;
+}
+
+.title_hello {
+    display: flex;
+}
+
+.title_hello h1 span {
+    font-size: clamp(4rem, 6vw + 0.9rem, 15rem);
+    font-weight: 700;
+}
+
+.title_namaste {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.title_namaste h2 {
+    font-size: clamp(2rem, 2vw + 0.5rem, 8rem);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.myphoto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vw;
+    width: 35vw;
+    position: relative;
+    flex: 1;
+}
+
+.myphoto img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.info_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(2rem, 3vw + 0.9rem, 4rem);
+    background: #f8f8f8;
+    border-radius: 25px;
+    margin-top: 2vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 2vw;
+}
+
+.info_text_content {
+    display: flex;
+}
+
+.info_text_content p {
+    font-size: clamp(1.5rem, 1.5vw + 0.5rem, 3rem);
+    font-weight: 450;
+    text-align: justify;
+}
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+    background-color: rgb(26, 26, 26);
+}
+
+.activities_content {
+    display: flex;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(2rem, 3vw + 0.9rem, 4rem);
+}
+
+.activities_content h1 {
+    font-size: clamp(1.5rem, 1.5vw + 0.5rem, 3rem);
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+
+.sliding_images {
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+}
+
+@media only screen and (max-width: 550px) {
+    .header_container {
+        flex-direction: column;
+    }
+
+    .myphoto {
+        height: 50vw;
+        width: 50vw;
+        flex: none;
+    }
+
+    .info_text {
+        margin-top: 4vw;
+    }
+}

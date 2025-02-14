@@ -1,0 +1,34 @@
+.background_image {
+    /*background-image: url("/experience.svg");*/
+    background-repeat: no-repeat;
+    background-size: 90vw;
+    background-position: 50% 4%;
+}
+.experience {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-bottom: 2vw;
+}
+
+.header_name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vw;
+}
+
+.header_name h1 {
+    font-size: clamp(3rem, 5vw + 0.9rem, 6rem);
+    font-weight: 600;
+}
+
+.experience_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin: 2vw;
+}

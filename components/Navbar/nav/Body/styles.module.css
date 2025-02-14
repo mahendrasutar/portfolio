@@ -1,0 +1,45 @@
+.navlinks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.navlinks a {
+    color: black;
+    text-decoration: none;
+}
+
+.navlinks p {
+    margin: 0px;
+    display: flex;
+    overflow: hidden;
+    font-size: 50px;
+    padding: 20px;
+    padding-top: 10px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navlinks {
+        max-width: 1200px;
+        margin-top: 40px;
+    }
+
+    .navlinks p {
+        font-size: 45px;
+        padding-right: 2vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navlinks {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .navlinks p {
+        font-size: 40px;
+    }
+}

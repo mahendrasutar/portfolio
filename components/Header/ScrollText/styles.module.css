@@ -1,0 +1,45 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vw;
+}
+
+.parallax {
+    overflow: hidden;
+    height: 20vh;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.scroller {
+    display: flex;
+}
+
+.parallax .scroller {
+    font-weight: 600;
+    font-size: clamp(2rem, 5vw + 0.9rem, 4rem);
+    color: #3e3e3e;
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.parallax span {
+    display: block;
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+    .section {
+        padding-top: 2vw;
+    }
+    .scroller {
+        align-items: center;
+        justify-content: center;
+    }
+}
