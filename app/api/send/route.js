@@ -1,8 +1,8 @@
-import { EmailTemplate } from "@/components/EmailTemplate/email-template";
+// import { EmailTemplate } from "@/components/EmailTemplate/email-template";
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+// import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) {
     try {
@@ -10,10 +10,9 @@ export async function POST(request) {
         console.log("body", body);
         const { email, name, subject, message } = body;
         const data = await resend.emails.send({
-            from: "mahendrasutar811@gmail.com",
-            to: email,
-            reply_to: "mahendrasutar811@gmail.com",
-            cc: "mahendrasutar811@gmail.com",
+            from: email,
+            to: "mahendrasutar811@gmail.com",
+            // reply_to: "mahendrasutar811@gmail.com",
             subject: subject,
             react: EmailTemplate({ senderName: name, messageBody: message }),
         });

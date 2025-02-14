@@ -3,6 +3,7 @@ import { useState } from "react";
 import { toast } from "react-hot-toast";
 import { motion } from "framer-motion";
 import styles from "./styles.module.css";
+import axios from "axios";
 
 export default function ContactForm() {
     const [data, setData] = useState({
@@ -31,12 +32,10 @@ export default function ContactForm() {
         }
 
         setLoading(true);
-        const response = await fetch("/api/send", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_EMAIL_API}/api/v1/sendMail`, {
+            email: data.email,
+            message: data.message,
+            name: data.name
         });
 
         if (response.status === 200) {
