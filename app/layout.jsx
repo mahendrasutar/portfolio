@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
     title: "Mahendra Sutar",
     description:
-        "Welcome to Mahendra's digital space! He is a product designer from India. This is where he shares all the design stuff that he has worked on.",
+        "Welcome to Mahendra's digital space! He is a UI/UX designer from India. This is where he shares all the design stuff that he has worked on.",
 };
 
 export default function RootLayout({ children }) {
